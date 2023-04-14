@@ -7,17 +7,54 @@ License: https://www.wowthemes.net/freebies-license/
     html { font-size:18px; } /* Increase the font size on higher resolutions */
     .container {max-width:80%;}
 }
+@media (min-width:768px) {
+    .mainheading {
+        max-width:100%;
+        margin-bottom: -0px;
+        margin-top: 0rem;
+        padding: 0;
+        height: 550px; 
+        border-radius: 0;
+        background-image: url(../images/peru1.jpg);
+        background-size: cover;
+        padding-top: 0rem;
+    }
+
+    .mainheading .col-md-10{
+        background:linear-gradient(135deg,  rgba(0, 0, 0, 0.75), transparent);
+        color: #fff;
+        max-width:100%;
+        margin-top: -25px;
+        /* margin-bottom: -50px;
+        
+        padding: 0; */
+        height: 550px; 
+        /* border-radius: 0; */
+    }
+
+    .mainheading .row {
+        margin: 0;
+    }
+}
+
 .mainheading {
     padding: 1rem 0rem;
+    padding-top: 1.5rem;
+    margin-top: 57px;
+    /* margin-top: -2rem; */
+    /* padding: 0; */
+    border-radius: 0;
+    background-image: url(../images/peru1.jpg);
+    background-size: cover;
 }
 
 a {
-    color: #00ab6b;
+    color: #f88010;
     transition: all 0.2s;
 }
 
 a:hover {
-    color: #038252;
+    color: #f85a10;
     text-decoration: none;
 }
 
@@ -305,7 +342,10 @@ span.post-read-more a:hover {
 }
 
 .mainheading h1.sitetitle {
-    font-family: Righteous;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 1000;
+    font-size: 3rem;
+    margin-top:100px;
 }
 
 .mainheading h1.posttitle {
@@ -581,8 +621,8 @@ ul.tags li a:hover {
 }
 
 .alertbar input[type="submit"] {
-    background-color: #1C9963;
-    border: 1px solid #1C9963;
+    background-color: #f88010;
+    border: 1px solid #f85210;
     color: rgba(255, 255, 255, 1);
     fill: rgba(255, 255, 255, 1);
     font-size: 0.85rem;
