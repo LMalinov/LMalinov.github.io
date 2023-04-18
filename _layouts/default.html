@@ -62,24 +62,48 @@ ga('send', 'pageview');
         <!-- Begin Menu -->
 
             <ul class="navbar-nav ml-auto">
+                {% include search-lunr.html %}
+
+                <li class="nav-item">
+                <a class="nav-link" href="{{ site.baseurl }}/"> <i class="fa fa-home"></i></a>
+                </li>
 
                 {% if page.url == "/" %}
                 <li class="nav-item active">
                 {% else %}
                 <li class="nav-item">
                 {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
+                <a class="nav-link" href="{{ site.baseurl }}/index.html"> Research Portfolio</a>
                 </li>
 
+                {% if page.url == "/about" %}
+                <li class="nav-item active">
+                {% else %}
                 <li class="nav-item">
+                {% endif %}
                 <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
                 </li>
 
+                {% if page.url == "/contact" %}
+                <li class="nav-item active">
+                {% else %}
                 <li class="nav-item">
+<<<<<<< HEAD
                 <a target="_blank" class="nav-link" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/"><i class="fab fa-snapchat-ghost"></i>  Docs</a>
                 </li>
 
                 {% include search-lunr.html %}
+=======
+                {% endif %}
+                <a class="nav-link" href="{{ site.baseurl }}/contact"> Contact</a>
+                </li>
+
+                <li class="nav-item">
+                <a target="_blank" class="nav-link" ><i class="fab fa-snapchat-ghost"></i> Docs</a>
+                </li>
+
+                
+>>>>>>> 8b25830884e28329f0b5a10bb20a582dfdabf5bd
 
             </ul>
 
@@ -92,18 +116,35 @@ ga('send', 'pageview');
 <!-- End Navigation
 ================================================== -->
 
-<div class="site-content">
-
-<div class="container">
 
 <!-- Site Title
 ================================================== -->
+{% if page.url == "/" %}
 <div class="mainheading">
-    <h1 class="sitetitle">{{ site.name }}</h1>
-    <p class="lead">
-        {{ site.description }}
-    </p>
+    <div class="col-md-10 transplight">
+{% else %}
+<style> .mainheading {background-image:url({{page.img}})}
+</style>
+<div class="mainheading" style="height:250px;">
+    <div class="col-md-10 transplight" style="height:250px;">
+{% endif %}
+        <div class="d-md-flex justify-content-center"></div>
+            <h1 class="sitetitle text-left ">{{ page.header }}</h1>
+                <p class="lead text-left">
+                            {{ page.description }}
+                </p>
+                {% if page.url == "/" %}
+                <p> →</p>
+                <p> →</p>
+                <p> →</p>
+                {% endif %}
+            </div>
+
+    </div>
 </div>
+
+<div class="site-content">
+<div class="container">
 
 <!-- Content
 ================================================== -->

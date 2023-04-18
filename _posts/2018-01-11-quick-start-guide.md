@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Let's test spoilers"
-author: sal
-categories: [ Jekyll, tutorial ]
+author: Lara Malinov
+categories: [ clustering, PCA ]
 image: assets/images/12.jpg
-featured: true
+featured: false
 hidden: true
 ---
 

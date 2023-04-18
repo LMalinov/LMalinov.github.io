@@ -19,8 +19,9 @@ post_class: post-template
         {% assign author = site.authors[page.author] %}
 
         <div class="col-md-9 flex-first flex-md-unordered">
-            <div class="mainheading">
-
+            <div class="mainheading" style="height:100px;margin-top:-40px;margin-bottom:50px;padding-top:-4rem;padding:0rem;background-image:none;">
+                <!-- Post Title -->
+                <h1 class="posttitle">{{ page.title }}</h1>
                 <!-- Author Box -->
                 {% if page.author %}
                 <div class="row post-top-meta">
@@ -37,10 +38,6 @@ post_class: post-template
                     </div>
                 </div>
                 {% endif %}
-
-                <!-- Post Title -->
-                <h1 class="posttitle">{{ page.title }}</h1>
-
             </div>
 
             <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
@@ -62,7 +59,7 @@ post_class: post-template
             <!-- End Featured Image -->
 
             <!-- Post Content -->
-            <div class="article-post">
+            <div class="article-post" style="text-align:justify;">
                 <!-- Toc if any -->
                 {% if page.toc %}
                     {% if page.beforetoc %}
