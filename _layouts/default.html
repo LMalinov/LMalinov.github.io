@@ -88,12 +88,6 @@ ga('send', 'pageview');
                 <li class="nav-item active">
                 {% else %}
                 <li class="nav-item">
-<<<<<<< HEAD
-                <a target="_blank" class="nav-link" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/"><i class="fab fa-snapchat-ghost"></i>  Docs</a>
-                </li>
-
-                {% include search-lunr.html %}
-=======
                 {% endif %}
                 <a class="nav-link" href="{{ site.baseurl }}/contact"> Contact</a>
                 </li>
@@ -103,7 +97,6 @@ ga('send', 'pageview');
                 </li>
 
                 
->>>>>>> 8b25830884e28329f0b5a10bb20a582dfdabf5bd
 
             </ul>
 
@@ -134,9 +127,9 @@ ga('send', 'pageview');
                             {{ page.description }}
                 </p>
                 {% if page.url == "/" %}
-                <p> →</p>
-                <p> →</p>
-                <p> →</p>
+                <p class="lead text-left " style="margin-left:100px;"> <a href="{{ site.baseurl }}/index.html" style="color:white;"> <i class="fa fa-caret-right"></i> Research</a></p>
+                <p class="lead text-left" style="margin-left:100px;"> <a href="{{ site.baseurl }}/about" style="color:white;"> <i class="fa fa-caret-right"></i>  Resume </a></p>
+                <p class="lead text-left" style="margin-left:100px;"> <a href="{{ site.baseurl }}/contact" style="color:white;" > <i class="fa fa-caret-right"></i>  Contact </a></p>
                 {% endif %}
             </div>
 
@@ -176,7 +169,7 @@ ga('send', 'pageview');
 	<div class="d-md-flex h-100">
 		<div class="col-md-4 transpdark align-self-center text-center h-100">
             <div class="d-md-flex align-items-center justify-content-center h-100">
-                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+                <h2 class="d-md-block align-self-center py-1 font-weight-light"> Explore <span class="d-none d-md-inline">→ </span></h2>
             </div>
 		</div>
 		<div class="col-md-8 p-5 align-self-center text-center">
@@ -204,7 +197,7 @@ ga('send', 'pageview');
                 Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
             </div>
             <div class="col-md-6 col-sm-6 text-center text-lg-right">    
-                <a target="_blank" href="https://www.wowthemes.net/mediumish-free-jekyll-template/">Mediumish Jekyll Theme</a> by WowThemes.net
+                Professional Blog - Lara Malinov
             </div>
         </div>
     </div>

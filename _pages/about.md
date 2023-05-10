@@ -5,7 +5,7 @@ header: About
 description: ''
 permalink: /about
 comments: false
-img: ../assets/images/jumbotron.jpg
+img: ../assets/images/ai-2.png
 ---
 
 <div class="row justify-content-between">
@@ -54,7 +54,7 @@ img: ../assets/images/jumbotron.jpg
   </tr>
     <tr>
     <td>Java</td>
-    <td>Editors: Microsoft 365, Google, Adobe Photoshop</td>
+    <td> Statistics: SPSS, Stata</td>
     <td>English</td>
   </tr>
     <tr>
@@ -64,8 +64,13 @@ img: ../assets/images/jumbotron.jpg
     </tr>
    <tr>
     <td> (JavaScript, HTML, CSS) </td>
-    <td> </td>
+    <td> Editors: Microsoft 365, Google, Adobe Photoshop </td>
     <td> Italian </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> Visualization: Tableau, matplotlib, ggplot </td>
+    <td> Dutch </td>
   </tr>
 </table>
 
