@@ -2,7 +2,7 @@
 layout: post
 title:  ML for Cardiovascular Disease
 header: CS229 Final Project 
-categories: [ Medecine, Classification, Health ]
+categories: [ Medicine, Classification, Health ]
 image: assets/images/ML cardio.jpg
 featured: false
 hidden: false
